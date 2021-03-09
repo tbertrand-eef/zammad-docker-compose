@@ -5,9 +5,9 @@ FROM ruby:2.6.6-slim AS builder
 ARG BUILD_DATE
 ARG DEBIAN_FRONTEND=noninteractive
 
-ENV GIT_BRANCH stable
+ENV GIT_BRANCH eef
 ENV GIT_URL ${PROJECT_URL}.git
-ENV PROJECT_URL https://github.com/zammad/zammad
+ENV PROJECT_URL https://github.com/tbertrand-eef/zammad
 ENV RAILS_ENV production
 ENV TAR_GZ_URL ${PROJECT_URL}/archive/${GIT_BRANCH}.tar.gz
 ENV ZAMMAD_DIR /opt/zammad
